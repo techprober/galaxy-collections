@@ -11,16 +11,6 @@
     <img src="https://img.shields.io/github/last-commit/TechProber/galaxy-collections" alt="lastcommit"/>
 </p>
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Pre-commit Hooks](#pre-commit-hooks)
-- [Available Collections](#available-collections)
-- [Community](#community)
-- [Contributors](#contributors)
-- [References](#references)
-- [License](#license)
-
 ## Introduction
 
 [Ansible Galaxy](https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#ansible-galaxy) refers to the Galaxy website where users can share roles, and to a command line tool for installing, creating and managing roles.
