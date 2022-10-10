@@ -3,24 +3,23 @@
     <em>Declare Ansible Collection as Code</em>
 </p>
 <p align="center">
-    <a href="https://t.me/pve_zh">
-        <img src="https://img.shields.io/badge/join-us%20on%20proxmox%20group-gray.svg?longCache=true&logo=proxmox&colorB=orange" alt="join-us-on-proxmox-group"/>
-    </a>
-    <a href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html">
-        <img src="https://img.shields.io/badge/ansible-galaxy-gray.svg?longCache=true&logo=ansible&colorB=red" alt="ansible-galaxy-collection"/>
-    </a>
-    <a href="https://t.me/joinchat/7AG3aEQ5I00wY2Q5">
-        <img src="https://img.shields.io/badge/join-us%20on%20telegram-gray.svg?longCache=true&logo=telegram&colorB=blue" alt="join-us-on-telegram"/>
-    </a>
-    <a href="https://github.com/TechProber/galaxy-collections">
-        <img src="https://img.shields.io/github/last-commit/TechProber/galaxy-collections" alt="lastcommit"/>
-    </a>
+    <img src="https://custom-icon-badges.herokuapp.com/github/license/techprober/galaxy-collections?logo=law&color=white" alt="License"/>
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftechprober%2Fgalaxy-collections&count_bg=%236134DF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false">
+    <img src="https://img.shields.io/badge/ansible-v1.23.0-gray.svg?longCache=true&logo=ansible&colorB=red" alt="ansible-galaxy-collection"/>
+    <img src="https://img.shields.io/badge/join-us%20on%20telegram-gray.svg?longCache=true&logo=telegram&colorB=blue" alt="join-us-on-telegram"/>
+    <img src="https://custom-icon-badges.herokuapp.com/github/issues-pr-closed/techprober/galaxy-collections?color=purple&logo=git-pull-request&logoColor=white"/>
+    <img src="https://img.shields.io/github/last-commit/TechProber/galaxy-collections" alt="lastcommit"/>
 </p>
 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Reference Links](#reference-links)
+- [Pre-commit Hooks](#pre-commit-hooks)
+- [Available Collections](#available-collections)
+- [Community](#community)
+- [Contributors](#contributors)
+- [References](#references)
+- [License](#license)
 
 ## Introduction
 
@@ -43,14 +42,12 @@ pip install pre-commit
 pre-commit install
 ```
 
-## Installation
+## Available Collections
 
-TBD.
+- [techprober.apt](https://github.com/techprober/galaxy-collections/tree/master/collections/ansible_collections/techprober/apt)
+- [techprober.minio](https://github.com/techprober/galaxy-collections/tree/master/collections/ansible_collections/techprober/minio)
 
-## Reference Links
-
-- [Ansible Galaxy - Collections](https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#ansible-galaxy)
-- [Ansible Galaxy - Roles](https://docs.ansible.com/ansible/2.7/reference_appendices/galaxy.html#ansible-galaxy)
+Please check out the `README.md` for individual collection for more details.
 
 ## Community
 
@@ -61,9 +58,14 @@ TBD.
 
 ## Contributors
 
-Special thanks goes to all [ contributors ](https://github.com/TechProber/cloud-estate/graphs/contributors). If you would like to contribute, please see the [instructions](https://github.com/TechProber/cloud-estate/blob/master/docs/contribute.md).
+Special thanks goes to all [ contributors ](https://github.com/TechProber/galaxy-collections/graphs/contributors). If you would like to contribute, please see the [instructions](https://github.com/TechProber/galaxy-collections/blob/master/docs/contribute.md).
 
-[ Cloud Estate ](https://github.com/TechProber/cloud-estate) is inspired and introduced in 2021. Currently, it is maintained by [ Kevin Yu (@yqlbu) ](https://github.com/yqlbu), [ Shi Kun (@kunish) ](https://github.com/kunish), and [ Chris (@slchris) ](https://github.com/slchris).
+[ Cloud Estate ](https://github.com/TechProber/galaxy-collections) is inspired and introduced in 2021. Currently, it is maintained by [ Kevin Yu (@yqlbu) ](https://github.com/yqlbu), [ Shi Kun (@kunish) ](https://github.com/kunish), and [ Chris (@slchris) ](https://github.com/slchris).
+
+## References
+
+- [Ansible Galaxy - Collections](https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#ansible-galaxy)
+- [Ansible Galaxy - Roles](https://docs.ansible.com/ansible/2.7/reference_appendices/galaxy.html#ansible-galaxy)
 
 ## License
 

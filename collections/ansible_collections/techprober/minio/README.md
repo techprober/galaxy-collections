@@ -58,7 +58,7 @@ After installing the collection, you may directly use the roles in your playbook
 
 ## Contribute to this collection
 
-We welcome community contributions to this collection. If you find problems, please open an issue or create a PR against the [techprober/galaxy-collections](https://github.com/techprober/galaxy-collections) repository. See [How to Contribute]() for more details.
+We welcome community contributions to this collection. If you find problems, please open an issue or create a PR against the [techprober/galaxy-collections](https://github.com/techprober/galaxy-collections) repository. See [How to Contribute](https://github.com/techprober/galaxy-collections/blob/master/docs/contribute.md) for more details.
 
 ## License
 
