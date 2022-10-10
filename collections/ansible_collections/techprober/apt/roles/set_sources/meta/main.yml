@@ -1,9 +1,9 @@
 dependencies: []
 
 galaxy_info:
-  role_name: techprober.apt.install
+  role_name: techprober.apt.set_source
   author: Kevin YU (@yqlbu)
-  description: Apt package management for linux
+  description: Apt sources management for linux
   issue_tracker_url: https://github.com/techprober/galaxy-collections/issues
   company: "TechProber"
   license: "license (BSD, MIT)"
