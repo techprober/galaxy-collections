@@ -25,7 +25,7 @@ collections:
 
 To install a specific version of the collection, using the format:
 
-```
+```yaml
 collections:
   - name: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/minio
     type: git
