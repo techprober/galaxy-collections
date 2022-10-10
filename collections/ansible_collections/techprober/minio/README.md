@@ -23,6 +23,12 @@ collections:
     version: master
 ```
 
+Upgrade the exiting collection with the following command:
+
+```bash
+ansible-galaxy collection install -r requirements.yml --upgrade
+```
+
 ## Use this collection
 
 After installing the collection, you may directly use the roles in your playbook.
