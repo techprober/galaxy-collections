@@ -60,8 +60,6 @@ Please check out the `README.md` for individual collection for more details.
 
 Special thanks goes to all [ contributors ](https://github.com/TechProber/galaxy-collections/graphs/contributors). If you would like to contribute, please see the [instructions](https://github.com/TechProber/galaxy-collections/blob/master/docs/contribute.md).
 
-[ techprober/galaxy-collections ](https://github.com/TechProber/galaxy-collections) is inspired and introduced in 2022. Currently, it is maintained by [ Kevin Yu (@yqlbu) ](https://github.com/yqlbu), [ Shi Kun (@kunish) ](https://github.com/kunish), and [ Chris (@slchris) ](https://github.com/slchris).
-
 ## References
 
 - [Ansible Galaxy - Collections](https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#ansible-galaxy)
