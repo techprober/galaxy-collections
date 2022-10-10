@@ -44,8 +44,8 @@ pre-commit install
 
 ## Available Collections
 
-- [techprober.apt](https://github.com/techprober/galaxy-collections/tree/master/collections/ansible_collections/techprober/apt)
-- [techprober.minio](https://github.com/techprober/galaxy-collections/tree/master/collections/ansible_collections/techprober/minio)
+- [techprober.apt](https://github.com/techprober/galaxy-collections/tree/master/collections/apt)
+- [techprober.minio](https://github.com/techprober/galaxy-collections/tree/master/collections/minio)
 
 Please check out the `README.md` for individual collection for more details.
 
