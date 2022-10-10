@@ -1,0 +1,7 @@
+---
+# normal upgrade
+- include_tasks: apt-upgrade.yml
+  when: not dist_upgrade
+# dist upgrade
+- include_tasks: apt-dist-upgrade.yml
+  when: dist_upgrade

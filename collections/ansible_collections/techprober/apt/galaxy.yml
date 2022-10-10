@@ -1,0 +1,20 @@
+namespace: techprober
+name: apt
+version: 1.0.0
+readme: README.md
+authors:
+- Kevin Yu <kevinyu211@yahoo.com>
+- Shi Kun <kunish.butt@gmail.com>
+- TechProber <techprober@protonmail.com>
+description: ansible collection for apt package manager operations
+license_file: 'LICENSE'
+tags:
+  - techprober
+  - linux
+  - apt
+dependencies: {}
+repository: http://github.com/techprober/cloud-estate
+documentation: http://github.com/techprober/cloud-estate/tree/master/ansible-playbooks/collections/apt/README.md
+homepage: http://github.com/techprober
+issues: http://github.com/techprober/cloud-estate
+build_ignore: []
