@@ -20,8 +20,8 @@ You can also include it in a `requirements.yml` file and install it with `ansibl
 # requirements.yml
 ---
 collections:
-  - name: techprober.apt
-    source: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt
+  - name: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt
+    type: git
     version: master
 ```
 
@@ -31,8 +31,8 @@ To install a specific version of the collection, using the format:
 # requirements.yml
 ---
 collections:
-  - name: techprober.apt
-    source: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt
+  - name: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt
+    type: git
     version: techprober.apt.v1.0.2
 ```
 
