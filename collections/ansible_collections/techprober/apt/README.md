@@ -23,6 +23,15 @@ collections:
     version: master
 ```
 
+To install a specific version of the collection, using the format:
+
+```
+collections:
+  - name: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt
+    type: git
+    version: techprober.apt.v1.0.0
+```
+
 Upgrade the exiting collection with the following command:
 
 ```bash

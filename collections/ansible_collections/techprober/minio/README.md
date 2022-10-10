@@ -23,6 +23,15 @@ collections:
     version: master
 ```
 
+To install a specific version of the collection, using the format:
+
+```
+collections:
+  - name: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/minio
+    type: git
+    version: techprober.minio.v1.0.0
+```
+
 Upgrade the exiting collection with the following command:
 
 ```bash
