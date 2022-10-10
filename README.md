@@ -1,4 +1,4 @@
-<h1 align="center">🪐 Galaxy Collection</h1>
+<h1 align="center">🪐 Galaxy Collections</h1>
 <p align="center">
     <em>Declare Ansible Collection as Code</em>
 </p>
