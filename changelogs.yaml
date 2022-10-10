@@ -1,0 +1,17 @@
+---
+ancestor: null
+releases:
+  apt:
+    1.0.1:
+      changes:
+        major_changes:
+        - initial release
+    1.0.2:
+      changes:
+        major_changes:
+        - techprober.apt - add metadata and roles description
+  minio:
+    1.0.1:
+      changes:
+        major_changes:
+        - initial release
