@@ -1,0 +1,18 @@
+dependencies: []
+
+galaxy_info:
+  role_name: techprober.apt.install
+  author: Kevin YU (@yqlbu)
+  description: Apt package management for linux
+  issue_tracker_url: https://github.com/techprober/galaxy-collections/issues
+  company: "TechProber"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.8
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - techprober
+    - linux
+    - apt
