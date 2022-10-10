@@ -17,19 +17,23 @@ ansible-galaxy collection install git@github.com:techprober/galaxy-collections#/
 You can also include it in a `requirements.yml` file and install it with `ansible-galaxy collection install -r requirements.yml`, using the format:
 
 ```yaml
+# requirements.yml
+---
 collections:
-  - name: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/minio
-    type: git
+  - name: techprober.minio
+    source: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/minio
     version: master
 ```
 
 To install a specific version of the collection, using the format:
 
 ```yaml
+# requirements.yml
+---
 collections:
-  - name: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/minio
-    type: git
-    version: techprober.minio.v1.0.0
+  - name: techprober.minio
+    source: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/minio
+    version: techprober.apt.v1.0.0
 ```
 
 Upgrade the exiting collection with the following command:

@@ -17,19 +17,23 @@ ansible-galaxy collection install git@github.com:techprober/galaxy-collections#/
 You can also include it in a `requirements.yml` file and install it with `ansible-galaxy collection install -r requirements.yml`, using the format:
 
 ```yaml
+# requirements.yml
+---
 collections:
-  - name: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt
-    type: git
+  - name: techprober.apt
+    source: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt
     version: master
 ```
 
 To install a specific version of the collection, using the format:
 
 ```yaml
+# requirements.yml
+---
 collections:
-  - name: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt
-    type: git
-    version: techprober.apt.v1.0.0
+  - name: techprober.apt
+    source: git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt
+    version: techprober.apt.v1.0.2
 ```
 
 Upgrade the exiting collection with the following command:
