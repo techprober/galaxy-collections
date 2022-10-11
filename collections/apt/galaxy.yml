@@ -13,8 +13,8 @@ tags:
   - linux
   - apt
 dependencies: {}
-repository: http://github.com/techprober/cloud-estate
-documentation: http://github.com/techprober/cloud-estate/tree/master/ansible-playbooks/collections/apt/README.md
-homepage: http://github.com/techprober
-issues: http://github.com/techprober/cloud-estate
+repository: http://github.com/techprober/galaxy-collections
+documentation: https://github.com/techprober/galaxy-collections/tree/master/collections/apt
+homepage: https://github.com/techprober/galaxy-collections/tree/master/collections/apt
+issues: http://github.com/techprober/galaxy-collections/issues
 build_ignore: []

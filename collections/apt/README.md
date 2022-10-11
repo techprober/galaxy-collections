@@ -11,7 +11,7 @@ Tested with the Ansible Core `2.8`, `2.12`, and `2.13` releases, and the current
 You can install the `techprober.apt` collection with the Ansible Galaxy CLI:
 
 ```bash
-ansible-galaxy collection install git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt,master
+ansible-galaxy collection install git+https://github.com/techprober/galaxy-collections#/collections/apt,master
 ```
 
 You can also include it in a `requirements.yml` file and install it with `ansible-galaxy collection install -r requirements.yml`, using the format:
@@ -20,7 +20,7 @@ You can also include it in a `requirements.yml` file and install it with `ansibl
 # requirements.yml
 ---
 collections:
-  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/ansible_collections/techprober/apt
+  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/apt
     type: git
     version: master
 ```
@@ -31,7 +31,7 @@ To install a specific version of the collection, using the format:
 # requirements.yml
 ---
 collections:
-  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/ansible_collections/techprober/apt
+  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/apt
     type: git
     version: techprober.apt.v1.0.2
 ```

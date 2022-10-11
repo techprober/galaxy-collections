@@ -1,6 +1,6 @@
-# TechProber Minio Collection
+# TechProber Maintenance Collection
 
-The `techprober-minio-collection` includes a variety of Ansible content to help automate the minio related operations for servers that are based on the `debian` system. This collection is maintained by the techprober core team.
+The `techprober-maintenance-collection` includes a variety of Ansible content to help automate the general maintenance workflow for servers that are based on the `debian` system. This collection is maintained by the techprober core team.
 
 ## Ansible version compatibility
 
@@ -8,10 +8,10 @@ Tested with the Ansible Core `2.8`, `2.12`, and `2.13` releases, and the current
 
 ## Install this collection
 
-You can install the `techprober.minio` collection with the Ansible Galaxy CLI:
+You can install the `techprober.maintenance` collection with the Ansible Galaxy CLI:
 
 ```bash
-ansible-galaxy collection install git+https://github.com/techprober/galaxy-collections#/collections/minio,master
+ansible-galaxy collection install git+https://github.com/techprober/galaxy-collections#/collections/maintenance,master
 ```
 
 You can also include it in a `requirements.yml` file and install it with `ansible-galaxy collection install -r requirements.yml`, using the format:
@@ -20,7 +20,7 @@ You can also include it in a `requirements.yml` file and install it with `ansibl
 # requirements.yml
 ---
 collections:
-  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/minio
+  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/maintenance
     type: git
     version: master
 ```
@@ -31,9 +31,9 @@ To install a specific version of the collection, using the format:
 # requirements.yml
 ---
 collections:
-  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/minio
+  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/maintenance
     type: git
-    version: techprober.minio.v1.0.0
+    version: techprober.maintenance.v1.0.0
 ```
 
 Upgrade the exiting collection with the following command:
