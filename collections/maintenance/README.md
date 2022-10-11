@@ -54,7 +54,7 @@ After installing the collection, you may directly use the roles in your playbook
   become: yes
 
   roles:
-    - role: techprober.minio.setup
+    - role: techprober.maintenance.setup
       vars:
         - home_user: "packer"
         - minio_remote_url: "http://10.178.0.9:9000"
