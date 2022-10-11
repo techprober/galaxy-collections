@@ -3,7 +3,7 @@
     <em>Declare Ansible Collection as Code</em>
 </p>
 <p align="center">
-    <img src="https://custom-icon-badges.herokuapp.com/github/license/techprober/galaxy-collections?logo=law&color=white" alt="License"/>
+    <img src="https://custom-icon-badges.herokuapp.com/github/license/techprober/galaxy-collections?logo=law&color=black" alt="License"/>
     <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftechprober%2Fgalaxy-collections&count_bg=%236134DF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false">
     <img src="https://img.shields.io/badge/ansible-v1.23.0-gray.svg?longCache=true&logo=ansible&colorB=red" alt="ansible-galaxy-collection"/>
     <img src="https://img.shields.io/badge/join-us%20on%20telegram-gray.svg?longCache=true&logo=telegram&colorB=blue" alt="join-us-on-telegram"/>
