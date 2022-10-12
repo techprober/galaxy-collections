@@ -1,6 +1,6 @@
-# TechProber Apt Collection
+# TechProber <Collection_Name> Collection
 
-The `techprober-apt-collection` includes a variety of Ansible content to help automate the management of package managements for servers that are based on the `debian` system. This collection is maintained by the techprober core team.
+The `techprober-<collection_name>-collection` includes a variety of Ansible content to help automate <collection_description> for servers that are based on the `debian` system. This collection is maintained by the techprober core team.
 
 ## Ansible version compatibility
 
@@ -8,10 +8,10 @@ Tested with the Ansible Core `2.8`, `2.12`, and `2.13` releases, and the current
 
 ## Install this collection
 
-You can install the `techprober.apt` collection with the Ansible Galaxy CLI:
+You can install the `techprober.<collection>` collection with the Ansible Galaxy CLI:
 
 ```bash
-ansible-galaxy collection install git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/apt,master
+ansible-galaxy collection install git+https://github.com/techprober/galaxy-collections#/collections/<collection>,master
 ```
 
 You can also include it in a `requirements.yml` file and install it with `ansible-galaxy collection install -r requirements.yml`, using the format:
@@ -20,7 +20,7 @@ You can also include it in a `requirements.yml` file and install it with `ansibl
 # requirements.yml
 ---
 collections:
-  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/apt
+  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/<collection>
     type: git
     version: master
 ```
@@ -31,9 +31,9 @@ To install a specific version of the collection, using the format:
 # requirements.yml
 ---
 collections:
-  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/apt
+  - name: git+https://github.com/techprober/galaxy-collections.git#/collections/<collection>
     type: git
-    version: techprober.apt.v1.0.0
+    version: techprober.minio.v1.0.0
 ```
 
 Upgrade the exiting collection with the following command:
@@ -47,16 +47,13 @@ ansible-galaxy collection install -r requirements.yml --upgrade
 After installing the collection, you may directly use the roles in your playbook.
 
 ```yaml
-# update-apt-packages
----
-- name: Upgrade remote server
+- name: Role Title
   hosts: all
-  become: yes
 
   roles:
-    - role: techprober.apt.update
+    - role: techprober.<collection>.<role/module>
       vars:
-        - dist_upgrade: false # set this var to true will perform dist upgrade
+        - foo: bar
 ```
 
 ## Contribute to this collection

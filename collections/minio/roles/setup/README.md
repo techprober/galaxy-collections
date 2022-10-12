@@ -44,7 +44,7 @@ minio_secret_key: "<secret_key>"
   become: yes
 
   roles:
-    - role: techprober.apt.update
+    - role: techprober.minio.setup
       vars:
         - home_user: "packer"
         - minio_remote_url: "http://10.178.0.9:9000"
