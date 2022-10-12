@@ -1,20 +1,20 @@
 namespace: techprober
-name: minio
+name: maintenance
 version: 1.0.0
 readme: README.md
 authors:
 - Kevin Yu <kevinyu211@yahoo.com>
 - Shi Kun <kunish.butt@gmail.com>
 - TechProber <techprober@protonmail.com>
-description: ansible collection for minio related operations
+description: ansible collection for server maintenance related operations
 license_file: 'LICENSE'
 tags:
   - techprober
   - linux
-  - minio
+  - maintenance
 dependencies: {}
 repository: http://github.com/techprober/galaxy-collections
-documentation: https://github.com/techprober/galaxy-collections/tree/master/collections/minio
-homepage: https://github.com/techprober/galaxy-collections/tree/master/collections/minio
+documentation: https://github.com/techprober/galaxy-collections/tree/master/collections/apt
+homepage: https://github.com/techprober/galaxy-collections/tree/master/collections/apt
 issues: http://github.com/techprober/galaxy-collections/issues
 build_ignore: []

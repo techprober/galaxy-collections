@@ -1,6 +1,6 @@
 # TechProber Minio Collection
 
-The `techprober-minio-collection` includes a variety of Ansible content to help automate the management of package managements for servers that are based on the `debian` system. This collection is maintained by the techprober core team.
+The `techprober-minio-collection` includes a variety of Ansible content to help automate the minio related operations for servers that are based on the `debian` system. This collection is maintained by the techprober core team.
 
 ## Ansible version compatibility
 
@@ -11,7 +11,7 @@ Tested with the Ansible Core `2.8`, `2.12`, and `2.13` releases, and the current
 You can install the `techprober.minio` collection with the Ansible Galaxy CLI:
 
 ```bash
-ansible-galaxy collection install git@github.com:techprober/galaxy-collections#/collections/ansible_collections/techprober/minio,master
+ansible-galaxy collection install git+https://github.com/techprober/galaxy-collections#/collections/minio,master
 ```
 
 You can also include it in a `requirements.yml` file and install it with `ansible-galaxy collection install -r requirements.yml`, using the format:
