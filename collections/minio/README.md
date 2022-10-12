@@ -33,7 +33,7 @@ To install a specific version of the collection, using the format:
 collections:
   - name: git+https://github.com/techprober/galaxy-collections.git#/collections/ansible_collections/techprober/minio
     type: git
-    version: techprober.apt.v1.0.0
+    version: techprober.minio.v1.0.0
 ```
 
 Upgrade the exiting collection with the following command:
