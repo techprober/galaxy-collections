@@ -55,6 +55,7 @@ Special thanks goes to all [ contributors ](https://github.com/TechProber/galaxy
 - [Ansible Galaxy - Collections](https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#ansible-galaxy)
 - [Ansible Galaxy - Roles](https://docs.ansible.com/ansible/2.7/reference_appendices/galaxy.html#ansible-galaxy)
 - [Ansible Galaxy - Installing Collections](https://docs.ansible.com/ansible/devel/collections_guide/collections_installing.html)
+- [Ansible Galaxy - Roles Explanation](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html)
 
 ## License
 
