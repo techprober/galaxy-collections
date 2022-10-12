@@ -19,7 +19,7 @@ None.
 Maximum seconds to wait for machine to reboot and respond to a test command, default is `300`
 
 ```yaml
-reboot_timeout: 120
+reboot_timeout: 300
 ```
 
 ## Example Playbook
