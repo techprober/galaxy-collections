@@ -15,3 +15,18 @@ releases:
       changes:
         major_changes:
         - initial release
+  maintenance:
+    1.0.0:
+      changes:
+        major_changes:
+        - initial release
+    1.0.1:
+      changes:
+        major_changes:
+        - techprober.maintenance - add a new role, namely techprober.maintenance.ipmitool
+        associated_changes:
+        - techprober.maintenance.ipmitool - added power_control for remote server
+    1.0.2:
+      fixes:
+        minior_changes:
+        - techprober.maintenance.ipmitool - added missing role name

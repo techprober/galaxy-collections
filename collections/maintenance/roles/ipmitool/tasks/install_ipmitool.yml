@@ -1,0 +1,10 @@
+---
+- name: Gather package facts
+  package_facts:
+    manager: apt
+
+- name: Install ipmitool if ipmitool is absent
+  apt:
+    name: ipmitool
+    state: present
+  when: '"ipmitool" not in ansible_facts.packages'
