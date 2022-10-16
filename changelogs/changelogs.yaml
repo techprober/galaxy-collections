@@ -30,3 +30,7 @@ releases:
       fixes:
         minior_changes:
         - techprober.maintenance.ipmitool - added missing role name
+    1.0.3:
+      fixes:
+        minior_changes:
+        - techprober.maintenance.ipmitool - fixed typos
