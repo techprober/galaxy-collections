@@ -1,4 +1,4 @@
 ---
 - include_tasks: install_ipmitool.yml
 - include_tasks: power_control.yml
-  when: action == "power"
+  when: action == "power_control"
