@@ -2,6 +2,10 @@
 
 An Ansible Role to control remote server using ipmitool
 
+## References
+
+https://github.com/ipmitool/ipmitool
+
 ## Requirements
 
 None.

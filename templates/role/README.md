@@ -2,6 +2,10 @@
 
 An Ansible Role to do something
 
+## References
+
+- []
+
 ## Requirements
 
 None.
