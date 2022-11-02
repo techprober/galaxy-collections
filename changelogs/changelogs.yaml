@@ -19,6 +19,10 @@ releases:
       changes:
         major_changes:
         - techprober.minio.backup - use ansible_user as the user to execute the backup script
+    1.0.3:
+      changes:
+        major_changes:
+        - techprober.minio.backup - use script_path to define the location of the backup script
   maintenance:
     1.0.0:
       changes:
