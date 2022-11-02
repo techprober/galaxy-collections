@@ -1,6 +1,6 @@
 namespace: techprober
 name: minio
-version: 1.0.0
+version: 1.0.2
 readme: README.md
 authors:
 - Kevin Yu <kevinyu211@yahoo.com>

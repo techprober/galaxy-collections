@@ -36,7 +36,6 @@ minio_remote_url: "http://<host_ip>:9000"
 ```yaml
 - name: Backup Data to Minio
   hosts: all
-  become: yes
 
   roles:
     - role: techprober.minio.backup
