@@ -15,6 +15,10 @@ releases:
       changes:
         major_changes:
         - initial release
+    1.0.2:
+      changes:
+        major_changes:
+        - techprober.minio.backup - use ansible_user as the user to execute the backup script
   maintenance:
     1.0.0:
       changes:
