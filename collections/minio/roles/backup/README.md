@@ -12,7 +12,7 @@ None.
 
 ## Prerequisites
 
-You will need to place a `backup.sh` script either under `/root/` or the user home directory `/home/user/`
+You will need to place a `backup.sh` script either under `/root/` or the user's home directory `/home/<user>/`
 
 Example:
 
@@ -25,10 +25,10 @@ mc cp /home/packer/backup.sh minio/server-configurations/awx/
 
 ## Role Variables
 
-The url of fqdn of the remote minio server
+The path of the backup script
 
 ```yaml
-minio_remote_url: "http://<host_ip>:9000"
+script_path: /home/packer/backup.sh
 ```
 
 ## Example Playbook
@@ -40,7 +40,7 @@ minio_remote_url: "http://<host_ip>:9000"
   roles:
     - role: techprober.minio.backup
       vars:
-        - minio_remote_url: "http://10.178.0.9:9000"
+        - script_path: /home/packer/backup.sh
 ```
 
 ## License

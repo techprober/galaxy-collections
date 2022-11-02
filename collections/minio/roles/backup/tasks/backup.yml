@@ -1,11 +1,28 @@
 ---
-- name: Backup data to minio bucket
-  command: "{{ ansible_env.HOME }}/backup.sh"
-  register: result
-  become: true
-  become_user: "{{ ansible_user }}"
+- name: Preparation
+  block:
+    - name: Look for backup script
+      ansible.builtin.stat:
+        path: "{{ script_path }}"
+      become: true
+      register: script
 
-- name: Check if backup job has completed successfully
-  ansible.builtin.debug:
-    msg: "Backup ran successfully!"
-  when: result is changed
+    - name: Backup script not found
+      ansible.builtin.fail:
+        msg: Cannot find backup script in the system
+      when: not script.stat.exists
+
+- name: Backup data to minio bucket
+  block:
+    - name: Backup data to minio
+      command: "{{ script_path }}"
+      register: result
+      become: true
+      when: script.stat.exists
+
+    - name: Check if backup job has completed successfully
+      ansible.builtin.debug:
+        msg: "Backup ran successfully!"
+      when:
+        - script.stat.exists
+        - result is changed
