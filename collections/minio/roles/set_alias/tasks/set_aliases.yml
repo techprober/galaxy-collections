@@ -1,0 +1,12 @@
+---
+- name: Update aliases in local minio configuration file
+  command: "mc alias set {{ item.name }} {{ item.url }} {{ item.access_key }} {{ item.secret_key }} --api s3v4"
+  no_log: true
+  loop: "{{ aliases }}"
+
+- name: Update aliases in local minio configuration file (root)
+  command: "mc alias set {{ item.name }} {{ item.url }} {{ item.access_key }} {{ item.secret_key }} --api s3v4"
+  no_log: true
+  loop: "{{ aliases }}"
+  become: true
+  become_user: root
