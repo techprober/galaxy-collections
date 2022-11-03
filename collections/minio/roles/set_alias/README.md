@@ -2,6 +2,10 @@
 
 An Ansible Role to update local minio configuration file for any linux distributions
 
+## References
+
+- [Minio Client Documentation](https://min.io/docs/minio/linux/reference/minio-mc/mc-alias-set.html)
+
 ## Requirements
 
 None.
