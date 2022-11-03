@@ -1,0 +1,62 @@
+---
+- name: Check if configuration exists
+  block:
+    - name: Inspect file in default path
+      ansible.builtin.stat:
+        path: "{{ ansible_env.HOME }}/.mc/config.json"
+      register: config
+
+    - name: Create default dir
+      ansible.builtin.file:
+        path: "{{ ansible_env.HOME }}/.mc }}"
+        state: directory
+        owner: "{{ ansible_user }}"
+        group: wheel
+        mode: "0755"
+      when: not config.stat.exists
+
+    - name: Inspect file in default path (root)
+      ansible.builtin.stat:
+        path: "/root/.mc/config.json"
+      register: root_config
+      become: true
+
+    - name: Create default dir (root)
+      ansible.builtin.file:
+        path: "/root/.mc"
+        state: directory
+        owner: root
+        group: root
+        mode: "0644"
+      become: true
+      when: not root_config.stat.exists
+
+- name: Check if minio client is installed
+  block:
+    - name: Inspect if mc is present in default path
+      command: "mc --version"
+      register: is_installed
+      changed_when: false
+      failed_when: is_installed.rc != 0
+      check_mode: false
+
+  rescue:
+    - name: Get current architecture
+      ansible.builtin.set_fact:
+        arch: "{{ 'linux-amd64' if (ansible_architecture == 'x86_64') else 'linux-arm64' }}"
+
+    - name: Get the latest release
+      ansible.builtin.get_url:
+        url: "https://dl.min.io/client/mc/release/{{ arch }}/mc"
+        dest: /usr/local/bin/mc
+      when: is_installed.rc != 0
+      check_mode: false
+      become: true
+
+    - name: Grant executable permission to mc
+      ansible.builtin.file:
+        path: /usr/local/bin/mc
+        state: file
+        mode: a+x
+      check_mode: false
+      become: true

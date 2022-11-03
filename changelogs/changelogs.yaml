@@ -23,6 +23,11 @@ releases:
       changes:
         major_changes:
         - techprober.minio.backup - use script_path to define the location of the backup script
+    1.0.4:
+      changes:
+        major_changes:
+        - techprober.minio.setup - added extra step to determine system architecture
+        - techprober.minio.set_alias - new role to dynamically add new hosts as aliases to the minio local config file
   maintenance:
     1.0.0:
       changes:
