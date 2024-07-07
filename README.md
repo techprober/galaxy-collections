@@ -17,7 +17,7 @@
 
 CopyRight 2021-2022 TechProber. All rights reserved.
 
-Maintainer: [ Kevin Yu (@yqlbu) ](https://github.com/yqlbu), [ Shi Kun (@kunish) ](https://github.com/kunish), and [ Chris (@slchris) ](https://github.com/slchris)
+Maintainer: [ Kev (@piyoki) ](https://github.com/piyoki) and [ Kunish (@kunish) ](https://github.com/kunish).
 
 This repo serves to provide our community users a better way to speed up their cloud automation process with Ansible. Feel free to contribute.
 
